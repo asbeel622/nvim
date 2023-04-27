@@ -1,0 +1,16 @@
+require('plugin.plugins')
+require('core.keymaps')
+require('core.options')
+
+	-----	插件	-----
+require('plugin.lualine')
+require('plugin.nvim-tree')
+require('plugin.treesitter')
+require('plugin.lsp')
+require('plugin.cmp')
+require('plugin.comment')
+require('plugin.autopairs')
+require('plugin.catppucchin')
+require('plugin.code-runner')
+require('plugin.blankline')
+require('plugin.gitsigns')
