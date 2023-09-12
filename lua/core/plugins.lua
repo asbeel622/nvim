@@ -32,6 +32,7 @@ vim.keymap.set("n", "<leader>pl", ":Lazy<CR>", { noremap = true })
 require("lazy").setup({
   require("plugins.treesitter"),
   require("plugins.autocomplete").config,
+  require("plugins.leap"),
 		{ "dstein64/vim-startuptime" },
 }, {
 })

@@ -9,6 +9,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
+opt.swf = false
 -- 防止包裹
 opt.wrap = false
 
