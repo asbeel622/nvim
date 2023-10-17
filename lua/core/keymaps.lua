@@ -33,17 +33,8 @@ vim.keymap.set("n", "<M-q>", "<C-\\><C-n>:bdelete! %<CR>",{noremap = true, silen
 vim.keymap.set('n', '<A-=>', ':split term://fish<CR>',{ noremap = true, silent = true })
 vim.keymap.set('n', '<leader>=', ':vsplit term://fish<CR>',{ noremap = true, silent = true })
 
+  ------------  joshuto ---------------
+vim.keymap.set('n', 'R', ':Joshuto<CR>')
 
 
 
-vim.keymap.set("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint(); require'user.dap.dap-util'.store_breakpoints(true)<cr>")
-vim.keymap.set("n", "<leader>dB", "<cmd>lua require'dap'.set_breakpoint(vim.fn.input '[Condition] > ')<cr>")
--- keymap("n", "<leader>dr", "lua require'dap'.repl.open()<cr
-vim.keymap.set("n", "<F9>", "<cmd>lua require'dap'.run_last()<cr>")
-vim.keymap.set('n', '<F10>', '<cmd>lua require"user.dap.dap-util".reload_continue()<CR>')
-vim.keymap.set("n", "<F4>", "<cmd>lua require'dap'.terminate()<cr>")
-vim.keymap.set("n", "<F5>", "<cmd>lua require'dap'.continue()<cr>")
-vim.keymap.set("n", "<F6>", "<cmd>lua require'dap'.step_over()<cr>")
-vim.keymap.set("n", "<F7>", "<cmd>lua require'dap'.step_into()<cr>")
-vim.keymap.set("n", "<F8>", "<cmd>lua require'dap'.step_out()<cr>")
-vim.keymap.set("n", "K", "<cmd>lua require'dapui'.eval()<cr>")

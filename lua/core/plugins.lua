@@ -6,11 +6,7 @@ if not vim.loop.fs_stat(lazypath) then
 		"--filter=blob:none",
 		"https://github.com/folke/lazy.nvim.git",
 		"--branch=stable", -- latest stable release
-		lazypath,
-	})
-end
-vim.opt.rtp:prepend(lazypath)
-
+		lazypath, }) end vim.opt.rtp:prepend(lazypath)
 local lazy_cmd = require("lazy.view.config").commands
 local lazy_keys = {
 	{ cmd = "install", key = "i" },
@@ -30,8 +26,19 @@ end
 vim.keymap.set("n", "<leader>pl", ":Lazy<CR>", { noremap = true })
 
 require("lazy").setup({
+  require("plugins.joshuto"),
+  require("plugins.indent"),
+  require("plugins.wilder"),
+  require("plugins.mason"),
+  require("plugins.debugger"),
+  require("plugins.git"),
+  require("plugins.fun"),
+  require("plugins.colorscheme"),
+  require("plugins.scrollbar"),
+  require("plugins.statusline"),
   require("plugins.treesitter"),
   require("plugins.autocomplete").config,
+ -- require("plugins.winbar"),
   require("plugins.leap"),
 		{ "dstein64/vim-startuptime" },
 }, {
